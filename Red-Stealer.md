@@ -30,8 +30,8 @@
 
 **Answer:** WEXTRACT
 
-
 <img src="Images/Q2.png" alt="Description of Image" />
+
 This can be identified along with the hash and file size details.  
 
 ---
@@ -41,6 +41,7 @@ This can be identified along with the hash and file size details.
 **Answer**2023-10-06 04:41
 
 Located in the [Details](https://www.virustotal.com/gui/file/248fcc901aff4e4b4c48c91e4d78a939bf681c9a1bc24addc3551b32768f907b/details) tab under the **History** section, where it provides when it was created with the timestamp and any other modification on the file.
+
 <img src="Images/Q3.png" alt="Description of Image" />
 
 ---
@@ -51,6 +52,7 @@ Located in the [Details](https://www.virustotal.com/gui/file/248fcc901aff4e4b4c4
 
 On this one got to learn that you should look at what happened before the Command and Control (C2) was executated, which is the collection, which in this phase focuses on gathering data from a target environment.This relates to **Data from Local System**, a technique that focuses on preparing stolen data for exfiltration.  
 Located in the **[Behavior](https://www.virustotal.com/gui/file/248fcc901aff4e4b4c48c91e4d78a939bf681c9a1bc24addc3551b32768f907b/behavior)** tab
+
 <img src="Images/Q4.png" alt="Description of Image" />
 
 ---
@@ -60,6 +62,7 @@ Located in the **[Behavior](https://www.virustotal.com/gui/file/248fcc901aff4e4b
 **Answer:** facebook.com
 
 Lol cause of nerves, I then thought Microsoft, Im screaming!!! Anyways, Identified in the **Relations** tab [Relations](https://www.virustotal.com/gui/file/248fcc901aff4e4b4c48c91e4d78a939bf681c9a1bc24addc3551b32768f907b/relations) tab under **Contacted Domains** and confirmed via [AnyRun](https://any.run/report/248fcc901aff4e4b4c48c91e4d78a939bf681c9a1bc24addc3551b32768f907b/f12132dd-5305-4fc1-bfce-15f2259ca6d9#Network) on the DNS request section you get to see Facebook is there
+
 <img src="Images/Q5.png" alt="Description of Image" />
 
 ---
@@ -74,6 +77,7 @@ Found in the **Behavior** tab under **IP traffic** [Community](https://www.virus
 <img src="Images/Q6.0.png" alt="Description of Image" />
 
 And confirmed in the [AnyRun](https://any.run/report/248fcc901aff4e4b4c48c91e4d78a939bf681c9a1bc24addc3551b32768f907b/f12132dd-5305-4fc1-bfce-15f2259ca6d9#Network) **Network** tab  on the **Malware Configuration**, you see the IP on the C2 on the AppLaunch.exe as we conduct that its a applaunch attack
+
 <img src="Images/Q6.1.png" alt="Description of Image" />
 
 --- 
@@ -84,6 +88,7 @@ And confirmed in the [AnyRun](https://any.run/report/248fcc901aff4e4b4c48c91e4d7
 <img src="Images/Q7.png" alt="Description of Image" />
 
 I got to search the Yara on the **Malware bazaar**. On the **AnyRun** on the [Network](https://any.run/report/248fcc901aff4e4b4c48c91e4d78a939bf681c9a1bc24addc3551b32768f907b/f12132dd-5305-4fc1-bfce-15f2259ca6d9#Network) tab and the Behavior activities section you get to see the Yara rule
+
 <img src="Images/Q7.0.png" alt="Description of Image" />
 
 --- 
@@ -93,6 +98,7 @@ I got to search the Yara on the **Malware bazaar**. On the **AnyRun** on the [Ne
 **Answer:** RECORDSTEALER.
 
 VirusTotal’s [Association](https://www.virustotal.com/gui/file/248fcc901aff4e4b4c48c91e4d78a939bf681c9a1bc24addc3551b32768f907b/associations)tab, links this malware to **RedLine Stealer**.
+
 <img src="Images/Q8.png" alt="Description of Image" />
 
 --- 
@@ -101,7 +107,9 @@ VirusTotal’s [Association](https://www.virustotal.com/gui/file/248fcc901aff4e4
 **Answer:** ADVAPI32.dll
 
 Known for **persistence, privilege escalation, code injection, and C2 operations**, this DLL was identified in the **Details** tab under the **Data Link Library (DLL) section**. 
+
 ![Q9](Images/Q9.png)
+
 --- 
 ## **Conclusion:**
 This investigation provided valuable insights into **RedLine Stealer**, including its **malware category, tactics, attack vectors, and indicators of compromise (IOCs)**. 
@@ -110,6 +118,6 @@ Through the use of **VirusTotal, ANY.RUN, ThreatFox, and MalwareBazaar**, I deep
 
 This hands-on experience highlighted the importance of **comprehensive malware analysis, proactive threat hunting, and cross-referencing multiple intelligence sources** to enhance cybersecurity defenses.
 
-Also, deep knowlege on using **VirusTotal**, I tried everything by  just looking at what information is provided in **VirusTotal**. This was fun , also enformative.
+Also, deep knowledge of using **VirusTotal**, I tried everything by  just looking at what information is provided in **VirusTotal**. This was fun, also informative.
 
 ---
