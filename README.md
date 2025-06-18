@@ -72,3 +72,6 @@ By utilizing **VirusTotal, ANY.RUN, MalwareBazaar, ThreatFox**, and other intell
 - [ThreatFox](https://threatfox.abuse.ch)
 
 ---
+## GitAds Sponsored
+[![Sponsored by GitAds](https://gitads.dev/v1/ad-serve?source=coderblee/red-stealer-lab@github)](https://gitads.dev/v1/ad-track?source=coderblee/red-stealer-lab@github)
+
